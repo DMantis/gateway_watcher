@@ -30,7 +30,7 @@
 # Развертка 
 Готовый Dockerfile для развертки приложения, порт MongoDB пробрасывается наружу на 27018 порт, для избежаний коллизий с уже установленной монгой на хосте (если есть).
 ``` 
-git clone https://gitlab.com/dmantis/gateway_watcher
+git clone https://github.com/dmantis/gateway_watcher
 cd gateway_watcher
 docker build -t gateway_watcher . 
 docker run -p 127.0.0.1:27018:27017 --name gw -t gateway_watcher
